@@ -1,0 +1,40 @@
+h1
+{
+    Color: red;
+}
+
+p
+{
+    Color: yellow;
+}
+.menu
+{
+    display: block;
+    border-width: 3px;
+    border-color: black;
+    border-style: solid; 
+    padding-top: 90px;
+    padding-bottom:90px;
+    margin: 10%;
+    text-align: center;
+}
+
+.menu1
+{
+   color: red;
+}
+
+.menu2
+{
+    color: grey;
+}
+
+.menu3
+{
+    color: green;
+}
+
+.menu4
+{
+    color: blueviolet;
+}
