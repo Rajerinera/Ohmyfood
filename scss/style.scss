@@ -1,0 +1,67 @@
+$red: red;
+h1
+{
+    color: $red;
+}
+
+p
+{
+    color: yellow;
+}
+
+.contenant
+{
+
+    display: flex;
+    flex-wrap: wrap;
+      .titre1 .titre2 .titre3 .titre4 
+         {
+           padding-top: 50%;
+           padding-bottom: 50%;
+         }  
+  
+}
+
+#bannière
+{
+    text-align: center;
+    background-color: seagreen;
+    color: yellowgreen;
+}
+.prochainement> p
+{
+text-align: center;
+color:yellowgreen;
+background-color: seagreen;
+}
+.menu
+{
+    display: block;
+    border-width: 3px;
+    border-color: black;
+    border-style: solid; 
+    padding-top: 120px;
+    padding-bottom:120px;
+    margin: 20%;
+    text-align: center;
+}
+
+.menu1
+{
+   color:$red;
+}
+
+.menu2
+{
+    color: grey;
+}
+
+.menu3
+{
+    color: green;
+}
+
+.menu4
+{
+    color: blueviolet;
+}
