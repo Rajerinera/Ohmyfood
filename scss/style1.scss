@@ -1,0 +1,55 @@
+#bannière
+{
+    text-align: center;
+    background-color: seagreen;
+    color: yellowgreen;
+}
+.prochainement> p
+{
+text-align: center;
+color:yellowgreen;
+background-color: seagreen;
+}
+.contenant
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15%;
+    justify-content: space-between;
+    
+       .menu
+       {
+        border-width: 3px;
+        border-color: black;
+        border-style: solid; 
+        padding-top: 200px;
+        padding-bottom:200px;
+        text-align: center;
+       }
+
+
+       .titre1 
+         {
+           padding-right: 140px;
+           padding-left: 120px;
+         }
+       .titre2
+          {
+            padding-right: 120px;
+            padding-left: 120px;          
+          }
+        .titre3
+        {
+            margin-top: 20px;
+            padding-right: 120px;
+            padding-left: 120px;
+        }
+        .titre4
+        {
+            margin-top: 20px;
+            padding-right: 120px;
+            padding-left: 140px;
+        }
+      
+     
+}

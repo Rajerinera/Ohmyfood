@@ -1,0 +1,33 @@
+h1 {
+  color: red;
+}
+
+p {
+  color: yellow;
+}
+
+.menu {
+  border-width: 3px;
+  border-color: black;
+  border-style: solid;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  text-align: center;
+}
+
+.menu1 {
+  color: red;
+}
+
+.menu2 {
+  color: grey;
+}
+
+.menu3 {
+  color: green;
+}
+
+.menu4 {
+  color: blueviolet;
+}
+/*# sourceMappingURL=style2.css.map */

@@ -13,11 +13,32 @@ p {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin: 15%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.contenant .titre1 .titre2 .titre3 .titre4 {
-  padding-top: 50%;
-  padding-bottom: 50%;
+.contenant .titre1 {
+  padding-right: 120px;
+  padding-left: 100px;
+}
+
+.contenant .titre2 {
+  padding-right: 100px;
+  padding-left: 100px;
+}
+
+.contenant .titre3 {
+  margin-top: 20px;
+  padding-right: 100px;
+  padding-left: 100px;
+}
+
+.contenant .titre4 {
+  margin-top: 20px;
+  padding-right: 100px;
+  padding-left: 120px;
 }
 
 #bannière {
@@ -33,13 +54,11 @@ p {
 }
 
 .menu {
-  display: block;
   border-width: 3px;
   border-color: black;
   border-style: solid;
   padding-top: 120px;
   padding-bottom: 120px;
-  margin: 20%;
   text-align: center;
 }
 
