@@ -1,5 +1,5 @@
 body {
-  margin: 0%;
+  margin: 0;
 }
 
 .menu {
@@ -16,27 +16,33 @@ body {
   margin-left: 10%;
   margin-right: 10%;
   font-family: cursive;
-  background-color: #fce4ec;
+  height: 700px;
+  background-color: #f1f8e9;
   color: black;
-}
-
-.menu h4 {
-  font-size: 15px;
 }
 
 .menu li {
   list-style-type: none;
 }
 
-.menu h2 {
-  text-align: center;
-  padding-left: 20px;
-}
-
 .menu .list {
+  width: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu h2 {
+  color: blue;
+  font-size: 40px;
+}
+
+.menu .pr {
+  width: 50px;
+  margin-right: 100px;
 }
 
 .line {
@@ -52,6 +58,8 @@ body {
   width: 550px;
   margin-left: 4%;
   position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .line h3 {
@@ -61,35 +69,21 @@ body {
 
 .line h3::before {
   content: "";
-  width: 180px;
+  width: 300px;
   height: 2px;
-  background-color: black;
   position: absolute;
   top: 50%;
-  left: 0;
+  left: -120px;
+  background-color: blue;
 }
 
 .line h3::after {
   content: "";
-  width: 180px;
+  width: 300px;
   height: 2px;
-  background-color: black;
   position: absolute;
   top: 50%;
-  right: 0;
+  right: -110px;
+  background-color: blue;
 }
-
-.titrefin {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 200px;
-}
-
-.fa-music {
-  font-size: 30px;
-  padding-top: 20px;
-  padding-right: 10px;
-  color: red;
-}
-/*# sourceMappingURL=style2.css.map */
+/*# sourceMappingURL=style4.css.map */

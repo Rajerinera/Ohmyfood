@@ -1,5 +1,6 @@
 body {
-  margin: 0%;
+  margin: 0;
+  padding: 0;
 }
 
 .menu {
@@ -16,27 +17,33 @@ body {
   margin-left: 10%;
   margin-right: 10%;
   font-family: cursive;
-  background-color: #fce4ec;
-  color: black;
-}
-
-.menu h4 {
-  font-size: 15px;
+  background-color: #f9fbe7;
 }
 
 .menu li {
   list-style-type: none;
 }
 
-.menu h2 {
-  text-align: center;
-  padding-left: 20px;
-}
-
 .menu .list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.menu h2 {
+  padding-left: 50px;
+  font-size: 30px;
+  background: -webkit-linear-gradient(left, red, blue);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .line {
@@ -52,6 +59,8 @@ body {
   width: 550px;
   margin-left: 4%;
   position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .line h3 {
@@ -63,7 +72,6 @@ body {
   content: "";
   width: 180px;
   height: 2px;
-  background-color: black;
   position: absolute;
   top: 50%;
   left: 0;
@@ -71,25 +79,47 @@ body {
 
 .line h3::after {
   content: "";
-  width: 180px;
+  width: 200px;
   height: 2px;
-  background-color: black;
   position: absolute;
   top: 50%;
-  right: 0;
+  right: -20px;
 }
 
-.titrefin {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 200px;
+.part1 {
+  color: orange;
 }
 
-.fa-music {
-  font-size: 30px;
-  padding-top: 20px;
-  padding-right: 10px;
-  color: red;
+.part1 .line h3::before {
+  background-color: orange;
 }
-/*# sourceMappingURL=style2.css.map */
+
+.part1 .line h3::after {
+  background-color: orange;
+}
+
+.part2 {
+  color: purple;
+}
+
+.part2 .line h3::after {
+  background-color: purple;
+}
+
+.part2 .line h3::before {
+  background-color: purple;
+}
+
+.part3 {
+  color: blue;
+  width: 56%;
+}
+
+.part3 .line h3::after {
+  background-color: blue;
+}
+
+.part3 .line h3::before {
+  background-color: blue;
+}
+/*# sourceMappingURL=style3.css.map */

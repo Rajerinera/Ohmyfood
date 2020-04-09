@@ -1,72 +1,124 @@
 @charset "UTF-8";
+body {
+  padding: 0;
+  margin: 0;
+}
+
 #bannière {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
   background-color: seagreen;
-  color: yellowgreen;
+  color: yellow;
+  height: 80px;
+  width: 100%;
+}
+
+.container {
+  padding: 20px;
 }
 
 .contenant {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-left: 15%;
-  margin-right: 15%;
-  margin-top: 0%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contenant2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .menu {
-  border-width: 4px;
-  border-color: black;
-  border-style: solid;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 350px;
+  height: 520px;
+  margin: 18px;
+  -webkit-box-shadow: 1px 1px 7px grey;
+          box-shadow: 1px 1px 7px grey;
 }
 
-.titre1 {
-  padding-top: 14em;
-  padding-bottom: 14em;
-  padding-right: 90px;
-  padding-left: 60px;
+.fa-music {
+  font-size: 4em;
+  color: #c50040;
+}
+
+.titre1 .note {
+  color: #6d4c41;
+  font-family: Georgia, Times, 'Times New Roman', serif;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.grey {
   background-color: #fce4ec;
+  color: #6d4c41;
 }
 
-.titre2 {
-  padding-top: 14em;
-  padding-bottom: 14em;
-  padding-right: 50px;
-  padding-left: 60px;
+.blancasse {
   background-color: #f9fbe7;
+  color: orange;
 }
 
-.titre3 {
-  margin-top: 20px;
-  padding-top: 14em;
-  padding-bottom: 14em;
-  padding-right: 60px;
-  padding-left: 50px;
+.blancasse .note {
+  background: -webkit-linear-gradient(left, red, blue);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.beige {
   background-color: #f1f8e9;
+  color: blue;
 }
 
-.titre4 {
-  margin-top: 20px;
-  padding-bottom: 14em;
-  padding-top: 14em;
-  padding-right: 77px;
-  padding-left: 70px;
+.beige .note {
+  color: blue;
+  font-style: italic;
+}
+
+.white {
   background-color: #ffff;
+  color: green;
+}
+
+.white .note {
+  background: -webkit-linear-gradient(left, #4caf50 64%, #a5d6a7 36%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-style: italic;
+  font-family: cursive;
 }
 
 .note {
   font-family: 'Times New Roman', Times, serif;
-  color: brown;
   font-size: 30px;
   text-decoration: none;
+  margin-top: 50px;
 }
 
 .pro {
@@ -76,41 +128,68 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  text-align: center;
-  border: 1px solid black;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 250px;
   background-color: seagreen;
-  font-size: 20px;
-  height: 50px;
-  width: 10%;
-  margin-left: 45%;
-  text-decoration: none;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 30px;
+  margin-bottom: 130px;
 }
 
 .pro_btn {
-  color: yellowgreen;
+  color: yellow;
   text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
 }
 
 .mention_contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding: 10px;
-  height: 40px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60px;
   background-color: seagreen;
   font-size: 17px;
-  margin-top: 20px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
 }
 
 .men_1 {
   text-decoration: none;
-  color: yellowgreen;
+  color: yellow;
+  margin-left: 40px;
 }
 
 .cont_2 {
   text-decoration: none;
-  color: yellowgreen;
+  color: yellow;
+  margin-right: 40px;
+}
+
+#t1 {
+  text-align: center;
+  margin-top: 40px;
+}
+
+#t2 {
+  margin-top: 40px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.t3 {
+  margin-top: 40px;
+  font-size: 30px;
 }
 /*# sourceMappingURL=style1.css.map */

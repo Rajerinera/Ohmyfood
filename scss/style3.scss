@@ -1,0 +1,112 @@
+body
+{
+    margin:0;
+    padding: 0;
+}
+.menu
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: cursive;
+    background-color:#f9fbe7;
+
+    li
+        {
+        list-style-type: none;
+        }
+    .list
+        {
+        display: flex;    
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        }
+    h2
+        { 
+        padding-left: 50px;
+        font-size: 30px;
+        background: -webkit-linear-gradient(left, red, blue);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        }   
+}
+
+.line
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 550px;
+    margin-left: 4%;
+    position: relative;
+    padding-left:30px;
+    padding-right:30px;
+    h3
+    {
+        width: 250px;
+        text-align: center;
+    }
+}
+
+.line h3::before
+{
+    content:"";
+    width:180px;
+    height:2px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    
+}
+.line h3::after
+{
+    content:"";
+    width:200px;
+    height:2px;
+    position: absolute;
+    top: 50%;
+    right:-20px;
+}
+.part1
+{
+    color: orange;
+    .line h3::before
+        {
+            background-color:orange
+        }
+    .line h3::after
+        {
+            background-color: orange;
+        }
+}
+
+.part2
+{
+    color: purple;
+    .line h3::after
+    {
+        background-color: purple;
+    }
+    .line h3::before
+    {
+        background-color: purple;
+    }
+}
+
+.part3
+{
+    color: blue;
+    width: 56%;
+    .line h3::after
+    {
+        background-color: blue;
+    }
+    .line h3::before
+    {
+        background-color: blue;
+    }
+}
