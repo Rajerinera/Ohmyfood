@@ -182,31 +182,31 @@ a{
 
 .p1
 {
-  animation: pulse ease 1s infinite;
+  animation: pulse 0.5s infinite ease;
 }
 
 .p2
 {
-  animation: pulse 2s ease infinite;
+  animation: pulse 1s infinite ease;
 }
 
 .p3
 {
-  animation: pulse 3s ease infinite;
+  animation: pulse 1.5s infinite ease;
 }
 
 @keyframes pulse
 {
   0%
   {
-    background-color:green;
-    transform: scale(1);
+    background: green;
+    opacity: 0;
   }
 
   100%
   {
-    background-color: yellow;
-    transform: scale(1);
+    background: yellow;
+    opacity: 1,4;
   }
 }
 

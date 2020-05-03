@@ -189,43 +189,39 @@ a #t1 {
 }
 
 .p1 {
-  -webkit-animation: pulse ease 1s infinite;
-          animation: pulse ease 1s infinite;
+  -webkit-animation: pulse 0.5s infinite ease;
+          animation: pulse 0.5s infinite ease;
 }
 
 .p2 {
-  -webkit-animation: pulse 2s ease infinite;
-          animation: pulse 2s ease infinite;
+  -webkit-animation: pulse 1s infinite ease;
+          animation: pulse 1s infinite ease;
 }
 
 .p3 {
-  -webkit-animation: pulse 3s ease infinite;
-          animation: pulse 3s ease infinite;
+  -webkit-animation: pulse 1.5s infinite ease;
+          animation: pulse 1.5s infinite ease;
 }
 
 @-webkit-keyframes pulse {
   0% {
-    background-color: green;
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    background: green;
+    opacity: 0;
   }
   100% {
-    background-color: yellow;
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    background: yellow;
+    opacity: 1,4;
   }
 }
 
 @keyframes pulse {
   0% {
-    background-color: green;
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    background: green;
+    opacity: 0;
   }
   100% {
-    background-color: yellow;
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    background: yellow;
+    opacity: 1,4;
   }
 }
 
