@@ -1,5 +1,6 @@
 body {
-  margin: 0;
+  margin: 0%;
+  padding: 0%;
 }
 
 .menu {
@@ -10,39 +11,28 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-left: 10%;
-  margin-right: 10%;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
   font-family: cursive;
-  height: 700px;
-  background-color: #f1f8e9;
-  color: black;
+  padding: 70px;
 }
 
-.menu li {
-  list-style-type: none;
+.menu h4 {
+  font-size: 15px;
+}
+
+.menu h2 {
+  text-align: center;
 }
 
 .menu .list {
-  width: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.menu h2 {
-  color: blue;
-  font-size: 40px;
-}
-
-.menu .pr {
-  width: 50px;
-  margin-right: 100px;
 }
 
 .line {
@@ -55,35 +45,50 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 550px;
-  margin-left: 4%;
   position: relative;
-  padding-left: 30px;
-  padding-right: 30px;
 }
 
 .line h3 {
-  width: 250px;
+  width: 240px;
   text-align: center;
 }
 
 .line h3::before {
   content: "";
-  width: 300px;
+  width: calc(50% - 120px);
   height: 2px;
   position: absolute;
   top: 50%;
-  left: -120px;
-  background-color: blue;
+  left: 0;
 }
 
 .line h3::after {
   content: "";
-  width: 300px;
+  width: calc(50% - 120px);
   height: 2px;
   position: absolute;
   top: 50%;
-  right: -110px;
+  right: 0;
+}
+
+.menu {
+  background-color: #f1f8e9;
+}
+
+.menu h2 {
+  background: -webkit-linear-gradient(left, blue 66%, #5472d3 34%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-style: italic;
+  font-family: cursive;
+}
+
+.line h3::before {
+  background-color: blue;
+}
+
+.line h3::after {
   background-color: blue;
 }
 /*# sourceMappingURL=style4.css.map */

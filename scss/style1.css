@@ -61,51 +61,85 @@ body {
           box-shadow: 1px 1px 7px grey;
 }
 
-.fa-music {
-  font-size: 4em;
-  color: #c50040;
+.menu:hover * {
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
 }
 
-.titre1 .note {
-  color: #6d4c41;
-  font-family: Georgia, Times, 'Times New Roman', serif;
-  font-weight: 900;
-  font-size: 20px;
+.note {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 30px;
+  text-decoration: none;
+  margin-top: 50px;
 }
 
-.grey {
+a {
+  text-decoration: none;
+}
+
+a .lanote {
   background-color: #fce4ec;
   color: #6d4c41;
 }
 
-.blancasse {
+a .fa-music {
+  font-size: 4em;
+  color: #c50040;
+}
+
+a .note {
+  font-family: Georgia, Times, 'Times New Roman', serif;
+  font-weight: 900;
+  font-size: 25px;
+  overflow: hidden;
+}
+
+a #t1 {
+  text-align: center;
+  margin-top: 40px;
+  color: #6d4c41;
+  font-size: 30px;
+}
+
+.lechic {
   background-color: #f9fbe7;
   color: orange;
 }
 
-.blancasse .note {
+.lechic .note {
   background: -webkit-linear-gradient(left, red, blue);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.beige {
+.lechic #t2 {
+  margin-top: 40px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.ledelice {
   background-color: #f1f8e9;
   color: blue;
 }
 
-.beige .note {
-  color: blue;
+.ledelice .note {
+  background: -webkit-linear-gradient(left, blue 66%, #5472d3 34%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-style: italic;
 }
 
-.white {
+.lapalette {
   background-color: #ffff;
   color: green;
 }
 
-.white .note {
+.lapalette .note {
   background: -webkit-linear-gradient(left, #4caf50 64%, #a5d6a7 36%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -114,11 +148,9 @@ body {
   font-family: cursive;
 }
 
-.note {
-  font-family: 'Times New Roman', Times, serif;
+.t3 {
+  margin-top: 40px;
   font-size: 30px;
-  text-decoration: none;
-  margin-top: 50px;
 }
 
 .pro {
@@ -146,6 +178,57 @@ body {
   font-size: 20px;
 }
 
+.cercle {
+  border: 1px solid yellow;
+  border-radius: 50%;
+  height: 2px;
+  width: 2px;
+  background-color: yellow;
+  margin-top: 15px;
+  margin-left: 2px;
+}
+
+.p1 {
+  -webkit-animation: pulse ease 1s infinite;
+          animation: pulse ease 1s infinite;
+}
+
+.p2 {
+  -webkit-animation: pulse 2s ease infinite;
+          animation: pulse 2s ease infinite;
+}
+
+.p3 {
+  -webkit-animation: pulse 3s ease infinite;
+          animation: pulse 3s ease infinite;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    background-color: green;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    background-color: yellow;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    background-color: green;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    background-color: yellow;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
 .mention_contact {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -166,30 +249,64 @@ body {
 }
 
 .men_1 {
+  display: inline-block;
   text-decoration: none;
   color: yellow;
   margin-left: 40px;
 }
 
+.men_1:hover {
+  -webkit-animation: shake 2s infinite;
+          animation: shake 2s infinite;
+}
+
 .cont_2 {
+  display: inline-block;
   text-decoration: none;
   color: yellow;
   margin-right: 40px;
 }
 
-#t1 {
-  text-align: center;
-  margin-top: 40px;
+.cont_2:hover {
+  -webkit-animation: shake 2s infinite;
+          animation: shake 2s infinite;
 }
 
-#t2 {
-  margin-top: 40px;
-  font-size: 30px;
-  font-weight: bold;
+@-webkit-keyframes shake {
+  10%, 90% {
+    -webkit-transform: translate3d(-1px, 0, 0);
+            transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    -webkit-transform: translate3d(2px, 0, 0);
+            transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    -webkit-transform: translate3d(-4px, 0, 0);
+            transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    -webkit-transform: translate3d(4px, 0, 0);
+            transform: translate3d(4px, 0, 0);
+  }
 }
 
-.t3 {
-  margin-top: 40px;
-  font-size: 30px;
+@keyframes shake {
+  10%, 90% {
+    -webkit-transform: translate3d(-1px, 0, 0);
+            transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    -webkit-transform: translate3d(2px, 0, 0);
+            transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    -webkit-transform: translate3d(-4px, 0, 0);
+            transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    -webkit-transform: translate3d(4px, 0, 0);
+            transform: translate3d(4px, 0, 0);
+  }
 }
 /*# sourceMappingURL=style1.css.map */

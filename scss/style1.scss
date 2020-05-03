@@ -1,3 +1,10 @@
+@mixin transform($transforms) 
+{ -webkit-transform: $transforms; 
+  -moz-transform: $transforms; 
+  -ms-transform: $transforms; 
+  transform: $transforms; }
+@mixin scale($scale) { @include transform(scale($scale)); }
+
 body
 {
   padding: 0;
@@ -38,65 +45,13 @@ width: 350px;
 height: 520px;
 margin: 18px;
 box-shadow: 1px 1px 7px grey;
-}
+&:hover{
 
-.fa-music
-{
-  font-size: 4em;
-  color:#c50040;
-  
+  *{
+    transition: all 1s ease;
+    @include scale(1.5);
+  }
 }
-.titre1 .note
-{
-  color:#6d4c41;
-  font-family: Georgia, Times, 'Times New Roman', serif;
-  font-weight: 900;
-  font-size: 20px;
-}
-.grey 
-{
-background-color: #fce4ec;
-color: #6d4c41;
-}
-
-.blancasse
-{
-  background-color:#f9fbe7; 
-  color:orange;
-  
-}
-.blancasse .note
-  {
-    background: -webkit-linear-gradient(left, red, blue);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  } 
-
-.beige
-{   
-  background-color:#f1f8e9;
-  color: blue;
-}
-.beige .note
-{
-  color: blue;
-  font-style: italic
-}
-
-.white
-{
-  background-color: #ffff;
-  color: green;
-}
-.white .note
-{
-  background: -webkit-linear-gradient(left,#4caf50 64%,#a5d6a7 36%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-style: italic;
-  font-family: cursive;
 }
 
 .note
@@ -107,6 +62,90 @@ color: #6d4c41;
   margin-top: 50px;
 }
 
+a{
+  text-decoration: none;
+  
+  .lanote
+  {
+
+  background-color: #fce4ec;
+  color: #6d4c41;  
+    
+    }
+    .fa-music
+    {
+    font-size: 4em;
+    color:#c50040;
+    }
+    .note
+    { 
+    
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-weight: 900;
+    font-size: 25px;
+    overflow: hidden;
+    }
+    #t1
+    { 
+      text-align: center;
+      margin-top: 40px;
+      color:#6d4c41;
+      font-size: 30px;
+
+    }
+}
+.lechic
+{
+  background-color:#f9fbe7; 
+  color:orange;  
+ .note
+  {
+    background: -webkit-linear-gradient(left, red, blue);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  #t2
+  {
+    margin-top: 40px;
+    font-size: 30px;
+    font-weight: bold;
+  }
+}  
+
+.ledelice
+{   
+  background-color:#f1f8e9;
+  color: blue;
+ .note
+  {
+    background: -webkit-linear-gradient(left,blue 66%,#5472d3 34%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-style: italic;
+  } 
+}
+
+.lapalette
+{
+  background-color: #ffff;
+  color: green;
+  .note
+  {
+  background: -webkit-linear-gradient(left,#4caf50 64%,#a5d6a7 36%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-style: italic;
+  font-family: cursive;
+  }
+}
+.t3
+  {
+    margin-top: 40px;
+    font-size: 30px;
+  }
 
 .pro{
   
@@ -121,6 +160,7 @@ color: #6d4c41;
   margin-left: auto;
   margin-top: 30px;
   margin-bottom: 130px;
+  
 }
 .pro_btn
 {  
@@ -128,7 +168,46 @@ color: #6d4c41;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 20px;
-  
+}
+.cercle
+{
+    border:1px solid yellow;
+    border-radius: 50%;
+    height: 2px;
+    width: 2px;
+    background-color: yellow;
+    margin-top: 15px;
+    margin-left: 2px;   
+} 
+
+.p1
+{
+  animation: pulse ease 1s infinite;
+}
+
+.p2
+{
+  animation: pulse 2s ease infinite;
+}
+
+.p3
+{
+  animation: pulse 3s ease infinite;
+}
+
+@keyframes pulse
+{
+  0%
+  {
+    background-color:green;
+    transform: scale(1);
+  }
+
+  100%
+  {
+    background-color: yellow;
+    transform: scale(1);
+  }
 }
 
 .mention_contact
@@ -146,31 +225,40 @@ color: #6d4c41;
  }
   .men_1 
   {
+    display: inline-block;
     text-decoration: none;
     color: yellow;
     margin-left: 40px;
+    &:hover{
+    animation: shake 2s infinite;
+    }
   }
 
   .cont_2
   {
+    display: inline-block;
     text-decoration: none;
     color: yellow;
     margin-right: 40px;
+    &:hover{
+    animation: shake 2s infinite;
+    }
+  }
+@keyframes shake
+{
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
   }
 
-  #t1
-  { 
-    text-align: center;
-    margin-top: 40px;
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
   }
-  #t2
-  {
-    margin-top: 40px;
-    font-size: 30px;
-    font-weight: bold;
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
   }
-  .t3
-  {
-    margin-top: 40px;
-    font-size: 30px;
-  }
+}

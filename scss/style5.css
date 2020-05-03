@@ -1,3 +1,8 @@
+body {
+  margin: 0%;
+  padding: 0%;
+}
+
 .menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6,45 +11,28 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-left: 10%;
-  margin-right: 10%;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
   font-family: cursive;
-  font-style: italic;
-  height: 700px;
-  background-color: #ffff;
-  color: black;
+  padding: 70px;
 }
 
-.menu li {
-  list-style-type: none;
+.menu h4 {
+  font-size: 15px;
+}
+
+.menu h2 {
+  text-align: center;
 }
 
 .menu .list {
-  width: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.menu h2 {
-  font-size: 50px;
-  background: -webkit-linear-gradient(left, #4caf50 64%, #a5d6a7 36%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-style: italic;
-  font-family: cursive;
-}
-
-.menu .pr {
-  width: 50px;
-  margin-right: 100px;
 }
 
 .line {
@@ -57,37 +45,52 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 550px;
-  margin-left: 4%;
   position: relative;
-  padding-left: 30px;
-  padding-right: 30px;
 }
 
 .line h3 {
-  width: 250px;
+  width: 240px;
   text-align: center;
 }
 
 .line h3::before {
   content: "";
-  border: 1px solid;
-  width: 300px;
-  height: 3px;
+  width: calc(50% - 120px);
+  height: 2px;
   position: absolute;
   top: 50%;
-  left: -120px;
-  background-color: green;
+  left: 0;
 }
 
 .line h3::after {
   content: "";
-  border: 1px solid;
-  width: 300px;
-  height: 3px;
+  width: calc(50% - 120px);
+  height: 2px;
   position: absolute;
   top: 50%;
-  right: -100px;
+  right: 0;
+}
+
+.menu {
+  font-style: italic;
+  background-color: #ffff;
+  color: black;
+}
+
+.menu h2 {
+  background: -webkit-linear-gradient(left, #4caf50 64%, #a5d6a7 36%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-style: italic;
+  font-family: cursive;
+}
+
+.line h3::before {
+  background-color: green;
+}
+
+.line h3::after {
   background-color: green;
 }
 /*# sourceMappingURL=style5.css.map */

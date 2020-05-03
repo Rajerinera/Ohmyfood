@@ -4,38 +4,68 @@
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
-    <link rel="stylesheet" href="scss/style1.scss">
+    <link rel="stylesheet" href="scss/style1.css">
     <title> ohmyfood </title>
 </head>
+
 <body>
-<div id="bannière">
-    <h1>Ohmyfood</h1>
-</div>
-<div class="container">
-    <div class="contenant">
-        <div class="menu grey">
-            <i class="fas fa-music"></i>
-            <div class="titre1"><a href="menu1.html" class="note">La note enchantée</a>
-                <div id="t1">MENU</div>
+    <div id="bannière">
+        <h1>Ohmyfood</h1>
+    </div>
+    <div class="container">
+        <div class="contenant">
+            <!--Ceci est le premier menu-->
+            <div>
+                <a href="menu1.html">
+                    <div class="menu lanote">
+                        <i class="fas fa-music"></i>
+                        <div class="note">La note enchantée</div>
+                        <div id="t1">MENU</div>
+                    </div>
+                </a>
+            </div>
+            <!--Ceci est le deuxième menu-->
+            <div>
+                <a href="menu2.html">
+                    <div class="menu lechic">
+                        <div class="note">Le chic à la française</div>
+                        <div id="t2">MENU</div>
+                    </div>
+                </a>
             </div>
         </div>
-        <div class="menu blancasse"><a href="menu2.html" class="note">Le chic à la française</a>
-            <div id="t2">MENU</div>
+        <div class="contenant2">
+            <!--Ceci est le troisème menu-->
+            <div>
+                <a href="menu3.html">
+                    <div class="menu ledelice">
+                        <div class="note">Le délice des papilles</div>
+                        <div class="t3">Menu</div>
+                    </div>
+                </a>
+            </div>
+            <!--Ceci est le quatrième menu-->
+            <div>
+                <a href="menu4.html">
+                    <div class="menu lapalette">
+                        <div class="note">La palette du goût</div>
+                        <div class="t3">Menu</div>
+                    </div>
+                </a>
+            </div>
         </div>
-    </div>
-    <div class="contenant2">
-        <div class="menu beige"><a href="menu3.html" class="note">Le délice des papilles</a>
-            <div class="t3">Menu</div>
+        <a href="menu1.html" class="pro_btn">
+            <div class=pro>
+                Prochainement 
+                <div class="cercle p1"></div>
+                <div class="cercle p2"></div>
+                <div class="cercle p3"></div>
+            </div>
+        </a>
+        <div class="mention_contact">
+            <a href=""><div class="men_1">Mentions légales</div></a>
+            <a href=""><div class="cont_2"> Contactez-nous</div> </a>
         </div>
-        <div class="menu white"><a href="menu4.html" class="note">La palette du goût</a>
-            <div class="t3">Menu</div>
-        </div>
-    </div>
-</div>
-<a href="menu1.html" class="pro_btn"><div class=pro>Prochainement</div></a>
-<div class="mention_contact">
-    <a href="" class="men_1"> Mentions légales </a>
-    <a href="" class="cont_2"> Contactez-nous </a>
-</div>
 </body>
+
 </html>
