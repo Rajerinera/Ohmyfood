@@ -182,17 +182,21 @@ a{
 
 .p1
 {
-  animation: pulse 0.5s infinite ease;
+  animation: pulse 1s infinite ease;
+  animation-delay: 0ms;
+
 }
 
 .p2
 {
   animation: pulse 1s infinite ease;
+  animation-delay: 250ms;
 }
 
 .p3
 {
-  animation: pulse 1.5s infinite ease;
+  animation: pulse 1s infinite ease;
+  animation-delay: 500ms;
 }
 
 @keyframes pulse
@@ -262,3 +266,19 @@ a{
     transform: translate3d(4px, 0, 0);
   }
 }
+
+
+@media all and (max-width: 640px)
+{
+    .container
+    {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+}
+

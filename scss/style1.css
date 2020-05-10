@@ -189,18 +189,24 @@ a #t1 {
 }
 
 .p1 {
-  -webkit-animation: pulse 0.5s infinite ease;
-          animation: pulse 0.5s infinite ease;
+  -webkit-animation: pulse 1s infinite ease;
+          animation: pulse 1s infinite ease;
+  -webkit-animation-delay: 0ms;
+          animation-delay: 0ms;
 }
 
 .p2 {
   -webkit-animation: pulse 1s infinite ease;
           animation: pulse 1s infinite ease;
+  -webkit-animation-delay: 250ms;
+          animation-delay: 250ms;
 }
 
 .p3 {
-  -webkit-animation: pulse 1.5s infinite ease;
-          animation: pulse 1.5s infinite ease;
+  -webkit-animation: pulse 1s infinite ease;
+          animation: pulse 1s infinite ease;
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
 }
 
 @-webkit-keyframes pulse {
@@ -303,6 +309,26 @@ a #t1 {
   40%, 60% {
     -webkit-transform: translate3d(4px, 0, 0);
             transform: translate3d(4px, 0, 0);
+  }
+}
+
+@media all and (max-width: 640px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
   }
 }
 /*# sourceMappingURL=style1.css.map */
