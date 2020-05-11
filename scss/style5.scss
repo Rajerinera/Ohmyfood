@@ -15,16 +15,18 @@
         font-family: cursive;
         }
 }
-
-.line h3::before
+.line
 {
-    background-color: green;   
+    display: flex;
+    justify-content: space-between;
 }
-.line h3::after
+.line_before
 {
-    background-color: green;
+    width: 200px;
+    height: 20px;
 }
-.trait
+.line_after
 {
-    color: green;
+    width: 200px;
+    height: 20px;
 }

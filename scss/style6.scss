@@ -1,6 +1,5 @@
 $halfwidth:50%;
 $halftitlewidth: 120px;
-
 body
 {
     margin: 0%;
@@ -19,7 +18,8 @@ body
     padding: 70px;
     h4
     {
-    font-size: 15px
+    font-size: 15px;
+   
     }
     h2
     {
@@ -38,44 +38,7 @@ body
     justify-content: center;
     align-items: center;
     position: relative;
-    h3
-    {
-    width: 240px;
-    text-align: center;
-    }
 }
-
-.line h3::before
-{
-    content:"";
-    width:calc(#{$halfwidth} - #{$halftitlewidth});
-    height:2px;
-    position: absolute;
-    top: 50%;
-    left: 0;
-}
-.line h3::after
-{
-    content:"";
-    width: calc(#{$halfwidth} - #{$halftitlewidth});
-    height:2px;
-    position: absolute;
-    top: 50%;
-    right: 0;
-}
-
-@media all and (max-width: 640px)
-{
-    
-    .menu
-    {
-        width: 100%;
-        font-size: 10px;
-        margin: 0%;
-        padding: 0;
-    }
-}
-
 .surligne
 {
   display: flex;
@@ -89,16 +52,20 @@ body
   width: 240px;
   margin-left: auto;
   margin-right: auto;
-  animation: tiret 2s infinite;
+  &:hover
+  {
+  animation: tiret 2s forwards;
+  animation-delay: 100ms;
+  }
 }
 @keyframes tiret
 {
         0% {
-            transform: scaleX(0);
+            transform: scale(0);
             opacity: .1;
         }
         17% {
-            transform: scaleX(.18);
+            transform: scale(.18);
         }
         24% {
             transform: scaleX(.4);
@@ -106,11 +73,11 @@ body
         46% {
             transform: scaleX(.81);
         }
-        85%,100% {
-            opacity: 1;
+        85% {
+            transform: scaleX (.18);
         }
         100% {
-            transform: scaleX(1);
+            transform: scaleX(0);
         }
 }
 .mention_contact
@@ -164,4 +131,25 @@ body
   40%, 60% {
     transform: translate3d(4px, 0, 0);
   }
+}
+@media all and (max-width: 640px)
+{
+    body
+    {
+        margin: 0%;
+        padding: 0%;
+    }
+    
+    .menu
+    {
+        height: 100%;
+        width: 100%;
+        font-size: 10px;
+        margin: 0%;
+        padding: 0%;
+    }
+    .mention_contact
+    {
+        margin-top: 0%;
+    }
 }

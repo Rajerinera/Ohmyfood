@@ -270,6 +270,11 @@ a{
 
 @media all and (max-width: 640px)
 {
+  body
+  {
+    padding: 0%;
+    margin: 0%;
+  }
     .container
     {
         display: flex;
@@ -279,6 +284,39 @@ a{
         width: 100%;
         margin: 0;
         padding: 0;
+    }
+
+    .contenant
+    {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin: 0%;
+    }
+
+    .contenant2
+    {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin: 0%;
+    }
+    #bannière
+    {
+      width: 100%;
+    }
+
+    .menu
+    {
+      width: 100%;
+      margin: 0%;
+      &:hover{
+
+        *{
+          transition: all 1s ease;
+          @include scale(1.3);
+        }
+      }
     }
 }
 

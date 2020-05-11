@@ -12,17 +12,14 @@
         font-style: italic;
         font-family: cursive;
         }
-}
-.line h3::before
-{
-    background-color: blue;    
-}
-.line h3::after
-{
-    background-color: blue;
-}
-
-.trait
-{
-    color: blue;
-}
+    }
+ .line_before
+        {
+            width: 300px;
+            height: 20px;
+        }
+ .line_after
+        {
+            width: 300px;
+            height: 20px;
+        }

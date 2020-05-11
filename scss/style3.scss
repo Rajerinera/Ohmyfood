@@ -11,43 +11,33 @@
         -webkit-text-fill-color: transparent;
         }   
 }
+.line
+{
+    display: flex;
+    justify-content: space-between;
+}
+.line_before
+        {
+            width: 200px;
+            height: 20px;
+        }
+.line_after
+        {
+            width: 200px;
+            height: 20px;
+        }
 
 .part1
 {
-    color: orange;
-    .line h3::before
-        {
-            background-color:orange
-        }
-    .line h3::after
-        {
-            background-color: orange;
-        }
+    color: orange;    
 }
 
 .part2
 {
-    color: purple;
-    .line h3::after
-    {
-        background-color: purple;
-    }
-    .line h3::before
-    {
-        background-color: purple;
-    }
+    color: purple;  
 }
 
 .part3
 {
     color: blue;
-    .line h3::after
-    {
-        background-color: blue;
-    }
-    .line h3::before
-    {
-        background-color: blue;
-    }
 }
-

@@ -4,14 +4,28 @@
     background-color:#fce4ec;
     color: black;
 }
-.line h3::before
+.line
 {
-    background-color: black;
+    display: flex;
+    justify-content: space-between;
+   
 }
-.line h3::after
+h3
 {
-    background-color: black;
+    width: 240px;
+    text-align: center;
 }
+.line_before
+{
+    width: 200px;
+    height: 20px;
+}
+.line_after
+{
+    width: 200px;
+    height: 20px;
+}
+
 .titrefin
 {   
     display: flex;
@@ -24,8 +38,7 @@
     h4 
     {
         font-size:20px;
-        margin-left:8px;
-        
+        margin-left:8px;   
     }
 }
 
@@ -35,4 +48,3 @@
     color: red;
     text-align: center;
 }
-
