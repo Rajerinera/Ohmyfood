@@ -31,54 +31,29 @@ body
     justify-content: space-between;
     }
 }
-
+h3
+{
+  width: 250px;
+  text-align: center;
+  margin-top: 10px;
+}
 .line
 {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-.surligne
-{
-  display: flex;
-  flex-direction: column;
-}
+    justify-content: space-between;
 
-.trait
+.line_before
 {
-  border: 1px solid;
-  text-align: center;
-  width: 240px;
-  margin-left: auto;
-  margin-right: auto;
-  &:hover
-  {
-  animation: tiret 2s forwards;
-  animation-delay: 100ms;
-  }
+    width: 250px;
+    height: 20px;
+    margin-top: 10px;
 }
-@keyframes tiret
+.line_after
 {
-        0% {
-            transform: scale(0);
-            opacity: .1;
-        }
-        17% {
-            transform: scale(.18);
-        }
-        24% {
-            transform: scaleX(.4);
-        }
-        46% {
-            transform: scaleX(.81);
-        }
-        85% {
-            transform: scaleX (.18);
-        }
-        100% {
-            transform: scaleX(0);
-        }
+    width: 250px;
+    height: 20px;
+    margin-top: 10px;
+}
 }
 .mention_contact
 {

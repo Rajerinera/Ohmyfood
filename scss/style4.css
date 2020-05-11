@@ -35,98 +35,31 @@ body {
           justify-content: space-between;
 }
 
+h3 {
+  width: 250px;
+  text-align: center;
+  margin-top: 10px;
+}
+
 .line {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.surligne {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+.line .line_before {
+  width: 250px;
+  height: 20px;
+  margin-top: 10px;
 }
 
-.trait {
-  border: 1px solid;
-  text-align: center;
-  width: 240px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.trait:hover {
-  -webkit-animation: tiret 2s forwards;
-          animation: tiret 2s forwards;
-  -webkit-animation-delay: 100ms;
-          animation-delay: 100ms;
-}
-
-@-webkit-keyframes tiret {
-  0% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-    opacity: .1;
-  }
-  17% {
-    -webkit-transform: scale(0.18);
-            transform: scale(0.18);
-  }
-  24% {
-    -webkit-transform: scaleX(0.4);
-            transform: scaleX(0.4);
-  }
-  46% {
-    -webkit-transform: scaleX(0.81);
-            transform: scaleX(0.81);
-  }
-  85% {
-    -webkit-transform: scaleX 0.18;
-            transform: scaleX 0.18;
-  }
-  100% {
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-  }
-}
-
-@keyframes tiret {
-  0% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-    opacity: .1;
-  }
-  17% {
-    -webkit-transform: scale(0.18);
-            transform: scale(0.18);
-  }
-  24% {
-    -webkit-transform: scaleX(0.4);
-            transform: scaleX(0.4);
-  }
-  46% {
-    -webkit-transform: scaleX(0.81);
-            transform: scaleX(0.81);
-  }
-  85% {
-    -webkit-transform: scaleX 0.18;
-            transform: scaleX 0.18;
-  }
-  100% {
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-  }
+.line .line_after {
+  width: 250px;
+  height: 20px;
+  margin-top: 10px;
 }
 
 .mention_contact {
@@ -238,15 +171,5 @@ body {
   -webkit-text-fill-color: transparent;
   font-style: italic;
   font-family: cursive;
-}
-
-.line_before {
-  width: 300px;
-  height: 20px;
-}
-
-.line_after {
-  width: 300px;
-  height: 20px;
 }
 /*# sourceMappingURL=style4.css.map */
