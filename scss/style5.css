@@ -1,6 +1,25 @@
+@charset "UTF-8";
 body {
   margin: 0%;
   padding: 0%;
+}
+
+a {
+  text-decoration: none;
+}
+
+#bannière {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  background-color: seagreen;
+  color: yellow;
+  height: 80px;
+  width: 100%;
 }
 
 .menu {
@@ -331,19 +350,19 @@ h3:hover + .trait3 {
 }
 
 .trait1 {
-  top: 28%;
+  top: 40%;
   left: 47%;
   width: 81px;
 }
 
 .trait2 {
-  top: 61%;
+  top: 73.5%;
   left: 43.5%;
   width: 175px;
 }
 
 .trait3 {
-  top: 94.5%;
+  top: 107.5%;
   left: 43%;
   width: 190px;
 }

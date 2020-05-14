@@ -4,7 +4,20 @@ body
     margin: 0%;
     padding: 0%;
 }
-
+a
+{
+    text-decoration: none;
+}
+#bannière
+{
+    display: flex;
+    justify-content: center;  
+    text-align: center;
+    background-color: seagreen;
+    color: yellow;
+    height: 80px;
+    width: 100%;
+}
 
 .menu
 {
