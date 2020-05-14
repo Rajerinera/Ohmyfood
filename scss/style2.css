@@ -135,10 +135,8 @@ h3:hover + .trait3 {
 
 .trait {
   position: absolute;
-  border: 1px solid;
   visibility: hidden;
-  width: 250px;
-  height: 5px;
+  height: 2px;
 }
 
 .line {
@@ -322,18 +320,21 @@ h3:hover + .trait3 {
 }
 
 .trait1 {
-  top: 36%;
-  left: 41%;
+  top: 37%;
+  left: 47%;
+  width: 80px;
 }
 
 .trait2 {
-  top: 78%;
-  left: 41%;
+  top: 79%;
+  left: 45%;
+  width: 135px;
 }
 
 .trait3 {
-  top: 111.6%;
-  left: 41%;
+  top: 113%;
+  left: 44%;
+  width: 163px;
 }
 
 .titrefin {
