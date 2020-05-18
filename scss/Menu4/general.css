@@ -16,8 +16,8 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  background-color: seagreen;
-  color: yellow;
+  background-color: #579c87;
+  color: #fdcb46;
   height: 80px;
   width: 100%;
 }
@@ -190,7 +190,7 @@ h3:hover + .trait3 {
       -ms-flex-align: center;
           align-items: center;
   height: 60px;
-  background-color: seagreen;
+  background-color: #579c87;
   font-size: 17px;
   width: 100%;
   position: fixed;
@@ -201,7 +201,7 @@ h3:hover + .trait3 {
 .men_1 {
   display: inline-block;
   text-decoration: none;
-  color: yellow;
+  color: #fdcb46;
   margin-left: 40px;
 }
 
@@ -213,7 +213,7 @@ h3:hover + .trait3 {
 .cont_2 {
   display: inline-block;
   text-decoration: none;
-  color: yellow;
+  color: #fdcb46;
   margin-right: 40px;
 }
 
@@ -260,7 +260,7 @@ h3:hover + .trait3 {
   }
 }
 
-@media all and (max-width: 640px) {
+@media all and (max-width: 850px) {
   body {
     margin: 0%;
     padding: 0%;
@@ -323,9 +323,9 @@ h3:hover + .trait3 {
         -ms-flex-align: center;
             align-items: center;
     height: 30px;
-    background-color: seagreen;
+    background-color: #579c87;
     font-size: 15px;
     width: 100%;
   }
 }
-/*# sourceMappingURL=style6.css.map */
+/*# sourceMappingURL=general.css.map */

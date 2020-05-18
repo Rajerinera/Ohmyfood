@@ -12,8 +12,8 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  background-color: seagreen;
-  color: yellow;
+  background-color: #579c87;
+  color: #fdcb46;
   height: 80px;
   width: 100%;
 }
@@ -242,7 +242,7 @@ a #t1 {
       -ms-flex-align: center;
           align-items: center;
   height: 60px;
-  background-color: seagreen;
+  background-color: #579c87;
   font-size: 17px;
   width: 100%;
   position: fixed;
@@ -253,7 +253,7 @@ a #t1 {
 .men_1 {
   display: inline-block;
   text-decoration: none;
-  color: yellow;
+  color: #fdcb46;
   margin-left: 40px;
 }
 
@@ -265,7 +265,7 @@ a #t1 {
 .cont_2 {
   display: inline-block;
   text-decoration: none;
-  color: yellow;
+  color: #fdcb46;
   margin-right: 40px;
 }
 
@@ -370,4 +370,4 @@ a #t1 {
     transform: scale(1.3);
   }
 }
-/*# sourceMappingURL=style1.css.map */
+/*# sourceMappingURL=index.css.map */

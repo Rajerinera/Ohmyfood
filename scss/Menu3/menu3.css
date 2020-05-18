@@ -16,8 +16,8 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  background-color: seagreen;
-  color: yellow;
+  background-color: #579c87;
+  color: #fdcb46;
   height: 80px;
   width: 100%;
 }
@@ -190,7 +190,7 @@ h3:hover + .trait3 {
       -ms-flex-align: center;
           align-items: center;
   height: 60px;
-  background-color: seagreen;
+  background-color: #579c87;
   font-size: 17px;
   width: 100%;
   position: fixed;
@@ -201,7 +201,7 @@ h3:hover + .trait3 {
 .men_1 {
   display: inline-block;
   text-decoration: none;
-  color: yellow;
+  color: #fdcb46;
   margin-left: 40px;
 }
 
@@ -213,7 +213,7 @@ h3:hover + .trait3 {
 .cont_2 {
   display: inline-block;
   text-decoration: none;
-  color: yellow;
+  color: #fdcb46;
   margin-right: 40px;
 }
 
@@ -260,7 +260,7 @@ h3:hover + .trait3 {
   }
 }
 
-@media all and (max-width: 640px) {
+@media all and (max-width: 850px) {
   body {
     margin: 0%;
     padding: 0%;
@@ -323,53 +323,45 @@ h3:hover + .trait3 {
         -ms-flex-align: center;
             align-items: center;
     height: 30px;
-    background-color: seagreen;
+    background-color: #579c87;
     font-size: 15px;
     width: 100%;
   }
 }
 
 .menu {
-  background-color: #f9fbe7;
+  background-color: #f1f8e9;
 }
 
 .menu h2 {
-  background: -webkit-linear-gradient(left, red 40%, blue 60%);
+  background: -webkit-linear-gradient(left, blue 66%, #5472d3 34%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-style: italic;
+  font-family: cursive;
+}
+
+.trait {
+  background-color: blue;
+  opacity: 0.8;
 }
 
 .trait1 {
   top: 40%;
-  left: 41%;
-  background-color: orange;
-  width: 245px;
+  left: 42.5%;
+  width: 200px;
 }
 
 .trait2 {
   top: 73.5%;
-  left: 43.5%;
-  background-color: purple;
-  width: 180px;
+  left: 43%;
+  width: 186px;
 }
 
 .trait3 {
   top: 107%;
-  left: 42.5%;
-  background-color: blue;
-  width: 205px;
+  left: 43.5%;
+  width: 175px;
 }
-
-.part1 {
-  color: orange;
-}
-
-.part2 {
-  color: purple;
-}
-
-.part3 {
-  color: blue;
-}
-/*# sourceMappingURL=style3.css.map */
+/*# sourceMappingURL=menu3.css.map */

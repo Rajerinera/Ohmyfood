@@ -15,8 +15,8 @@ body
     display: flex;
     justify-content: center;  
     text-align: center;
-    background-color: seagreen;
-    color: yellow;
+    background-color: #579c87;
+    color: #fdcb46;
     height: 80px;
     width: 100%;
 }
@@ -220,7 +220,7 @@ a{
   justify-content: space-between;
   align-items: center;
   height: 60px;
-  background-color: seagreen;
+  background-color: #579c87;
   font-size: 17px;
   width: 100%;
   position: fixed;
@@ -231,7 +231,7 @@ a{
   {
     display: inline-block;
     text-decoration: none;
-    color: yellow;
+    color:#fdcb46;
     margin-left: 40px;
     &:hover{
     animation: shake 2s infinite;
@@ -242,7 +242,7 @@ a{
   {
     display: inline-block;
     text-decoration: none;
-    color: yellow;
+    color: #fdcb46;
     margin-right: 40px;
     &:hover{
     animation: shake 2s infinite;
