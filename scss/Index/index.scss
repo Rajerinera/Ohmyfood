@@ -9,6 +9,7 @@ body
 {
   padding: 0;
   margin: 0;
+  background-color: #ffffff;
 }
 #bannière
 {
@@ -68,14 +69,14 @@ a{
   .lanote
   {
 
-  background-color: #fce4ec;
-  color: #6d4c41;  
+  background-color: #fcdfdb;
+  color: #3c1218; 
     
     }
     .fa-music
     {
     font-size: 4em;
-    color:#c50040;
+    color:#f15861;
     }
     .note
     { 
@@ -89,18 +90,17 @@ a{
     { 
       text-align: center;
       margin-top: 40px;
-      color:#6d4c41;
+      color:#3c1218;
       font-size: 30px;
 
     }
 }
 .lechic
 {
-  background-color:#f9fbe7; 
-  color:orange;  
+  background-color:#fff5fe; 
  .note
   {
-    background: -webkit-linear-gradient(left, red, blue);
+    background: -webkit-linear-gradient(left, #d8852e 30%,#905bfd 70%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -110,13 +110,14 @@ a{
     margin-top: 40px;
     font-size: 30px;
     font-weight: bold;
+    color:#c77412;
   }
 }  
 
 .ledelice
 {   
-  background-color:#f1f8e9;
-  color: blue;
+  background-color:#f9f9f9;
+  color:#053fe3;
  .note
   {
     background: -webkit-linear-gradient(left,blue 66%,#5472d3 34%);
@@ -126,10 +127,16 @@ a{
     font-style: italic;
   } 
 }
+.t3
+  {
+    margin-top: 40px;
+    font-size: 30px;   
+  }
+
 
 .lapalette
 {
-  background-color: #ffff;
+  background-color: #fdfffd;
   color: green;
   .note
   {
@@ -141,11 +148,6 @@ a{
   font-family: cursive;
   }
 }
-.t3
-  {
-    margin-top: 40px;
-    font-size: 30px;
-  }
 
 .pro{
   
@@ -155,7 +157,7 @@ a{
   padding-top: 10px;
   padding-bottom: 10px;
   width: 250px;
-  background-color: seagreen;
+  background-color: #579c87;
   margin-right: auto;
   margin-left: auto;
   margin-top: 30px;
@@ -164,18 +166,18 @@ a{
 }
 .pro_btn
 {  
-  color: yellow;
+  color: #fdcb46;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 20px;
 }
 .cercle
 {
-    border:1px solid yellow;
+    border:1px solid #fdcb46;
     border-radius: 50%;
     height: 2px;
     width: 2px;
-    background-color: yellow;
+    background-color:#fdcb46;
     margin-top: 15px;
     margin-left: 2px;   
 } 
@@ -203,13 +205,13 @@ a{
 {
   0%
   {
-    background: green;
+    background: #579c87;
     opacity: 0;
   }
 
   100%
   {
-    background: yellow;
+    background: #fdcb46;
     opacity: 1,4;
   }
 }

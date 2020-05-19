@@ -72,92 +72,6 @@ h3 {
   cursor: pointer;
 }
 
-h3:hover + .trait1 {
-  -webkit-transform-origin: 0 50%;
-          transform-origin: 0 50%;
-  -webkit-animation: tiret forwards;
-          animation: tiret forwards;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  visibility: visible;
-}
-
-h3:hover + .trait2 {
-  -webkit-transform-origin: 0 50%;
-          transform-origin: 0 50%;
-  -webkit-animation: tiret forwards;
-          animation: tiret forwards;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  visibility: visible;
-}
-
-h3:hover + .trait3 {
-  -webkit-transform-origin: 0 50%;
-          transform-origin: 0 50%;
-  -webkit-animation: tiret forwards;
-          animation: tiret forwards;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  visibility: visible;
-}
-
-@-webkit-keyframes tiret {
-  0% {
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-    opacity: 1;
-  }
-  17% {
-    -webkit-transform: scaleX(0.18);
-            transform: scaleX(0.18);
-    opacity: 0.8;
-  }
-  24% {
-    -webkit-transform: scaleX(0.4);
-            transform: scaleX(0.4);
-  }
-  46% {
-    -webkit-transform: scaleX(0.81);
-            transform: scaleX(0.81);
-  }
-  100% {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-  }
-}
-
-@keyframes tiret {
-  0% {
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-    opacity: 1;
-  }
-  17% {
-    -webkit-transform: scaleX(0.18);
-            transform: scaleX(0.18);
-    opacity: 0.8;
-  }
-  24% {
-    -webkit-transform: scaleX(0.4);
-            transform: scaleX(0.4);
-  }
-  46% {
-    -webkit-transform: scaleX(0.81);
-            transform: scaleX(0.81);
-  }
-  100% {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-  }
-}
-
-.trait {
-  position: absolute;
-  visibility: hidden;
-  height: 2px;
-}
-
 .line {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -328,4 +242,180 @@ h3:hover + .trait3 {
     width: 100%;
   }
 }
-/*# sourceMappingURL=general.css.map */
+
+.menu {
+  background-color: #fff5fe;
+}
+
+.menu h2 {
+  background: -webkit-linear-gradient(left, #d8852e 30%, #905bfd 70%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.part1 {
+  color: orange;
+}
+
+.part1 h3::after {
+  content: "";
+  position: absolute;
+  border: 3px solid transparent;
+  top: 25px;
+  left: -2px;
+}
+
+.part1 h3:hover::after {
+  -webkit-animation: trait 1s linear forwards;
+          animation: trait 1s linear forwards;
+}
+
+@-webkit-keyframes trait {
+  0% {
+    width: 0;
+    height: 0;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: orange;
+  }
+  100% {
+    width: 100%;
+    height: 0;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: orange;
+  }
+}
+
+@keyframes trait {
+  0% {
+    width: 0;
+    height: 0;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: orange;
+  }
+  100% {
+    width: 100%;
+    height: 0;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: orange;
+  }
+}
+
+.part2 {
+  color: purple;
+}
+
+.part2 h3::after {
+  content: "";
+  position: absolute;
+  border: 3px solid transparent;
+  top: 25px;
+  left: -2px;
+}
+
+.part2 h3:hover::after {
+  -webkit-animation: trait1 1s linear forwards;
+          animation: trait1 1s linear forwards;
+}
+
+@-webkit-keyframes trait1 {
+  0% {
+    width: 0;
+    height: 0;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: purple;
+  }
+  100% {
+    width: 100%;
+    height: 0;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: purple;
+  }
+}
+
+@keyframes trait1 {
+  0% {
+    width: 0;
+    height: 0;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: purple;
+  }
+  100% {
+    width: 100%;
+    height: 0;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: purple;
+  }
+}
+
+.part3 {
+  color: blue;
+}
+
+.part3 h3::after {
+  content: "";
+  position: absolute;
+  border: 3px solid transparent;
+  top: 25px;
+  left: -2px;
+}
+
+.part3 h3:hover::after {
+  -webkit-animation: trait2 1s linear forwards;
+          animation: trait2 1s linear forwards;
+}
+
+@-webkit-keyframes trait2 {
+  0% {
+    width: 0;
+    height: 0;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: blue;
+  }
+  100% {
+    width: 100%;
+    height: 0;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: blue;
+  }
+}
+
+@keyframes trait2 {
+  0% {
+    width: 0;
+    height: 0;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: blue;
+  }
+  100% {
+    width: 100%;
+    height: 0;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: blue;
+  }
+}
+/*# sourceMappingURL=menu2.css.map */
