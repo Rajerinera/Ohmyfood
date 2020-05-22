@@ -33,7 +33,6 @@ a {
   width: 60%;
   margin-left: auto;
   margin-right: auto;
-  font-family: cursive;
   padding: 70px;
 }
 
@@ -246,6 +245,7 @@ h3 {
 .menu {
   background-color: #fcdfdb;
   color: black;
+  font-family: 'Open Sans', sans-serif, cursive;
 }
 
 h3::after {
